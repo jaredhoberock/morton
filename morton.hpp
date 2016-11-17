@@ -54,6 +54,7 @@ std::pair<
   half_width_type y = 0;
 
   // for each bit of the half width numbers
+  #pragma unroll
   for(int i = 0; i < sizeof(half_width_type) * 8; ++i)
   {
     // pick out the ith even bit of the full width integer and assign it to bit i
